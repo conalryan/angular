@@ -9,6 +9,7 @@ import { ContentProjectionComponent } from "./content-projection/container/conte
 import { ViewChildComponent } from "./view-child/view-child.component";
 import { ViewChildrenComponent } from "./view-children/container/view-children.component";
 import { ContentChildrenComponent } from "./content-children/container/content-children.component";
+import { ContentProjectionAnimalsComponent } from "./content-projection-animals/content-projection-animals.component";
 
 const routes: Routes = [
   /* TODO: Make this a parent and child routes {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: "content-projection",
     component: ContentProjectionComponent
+  },
+  {
+    path: "content-projection-animals",
+    component: ContentProjectionAnimalsComponent
   },
   {
     path: "element-ref",

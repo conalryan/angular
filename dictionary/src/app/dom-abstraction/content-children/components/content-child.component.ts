@@ -9,10 +9,12 @@ import {
   ViewChild
 } from "@angular/core";
 
+let instances = 0;
+
 @Component({
   selector: "app-content-child",
   template: `
-    <h1>Content Child</h1>
+    <h1>Content Child - {{instanceRef}}</h1>
     <ng-content></ng-content>
   `
 })
@@ -22,11 +24,13 @@ export class ContentChildComponent
   h1: ElementRef;
   @ContentChild("tplRefInsideNgContent")
   tplRef: ElementRef;
-
+  instances = instances + 1;
+  instanceRef = instances;
   constructor() {
     console.log("[Child] constructor() { h1, tplRef } ");
     console.log(this.h1); // undefined
     console.log(this.tplRef); // undefined
+
   }
 
   ngOnInit() {

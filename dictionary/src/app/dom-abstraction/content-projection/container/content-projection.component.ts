@@ -15,6 +15,28 @@ import { Component, OnInit } from "@angular/core";
     <app-child-wrapper>
       <app-child></app-child>
     </app-child-wrapper>
+
+    <table class="table">
+    <thead>
+      <tr>
+        <th class="col">Company</th>
+        <th class="col-6">Contact</th>
+        <th>Country</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      </tbody>
+    </table>
   `
 })
 export class ContentProjectionComponent implements OnInit {

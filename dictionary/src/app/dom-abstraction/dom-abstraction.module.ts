@@ -16,6 +16,9 @@ import { ViewChildrenComponent } from "./view-children/container/view-children.c
 import { ContentChildrenComponent } from "./content-children/container/content-children.component";
 import { ContentChildComponent } from "./content-children/components/content-child.component";
 import { ChildWrapperComponent } from "./content-projection/components/child-wrapper.component";
+import { SheepComponent } from './content-projection-animals/sheep.component';
+import { ContentProjectionAnimalsComponent } from './content-projection-animals/content-projection-animals.component';
+import { PastureComponent } from './content-projection-animals/pasture.component';
 
 @NgModule({
   imports: [
@@ -39,7 +42,10 @@ import { ChildWrapperComponent } from "./content-projection/components/child-wra
     ViewChildrenComponent,
     ChildComponent,
     ContentChildrenComponent,
-    ContentChildComponent
+    ContentChildComponent,
+    SheepComponent,
+    ContentProjectionAnimalsComponent,
+    PastureComponent
   ],
   providers: [],
   entryComponents: [ExEntryComponent]
