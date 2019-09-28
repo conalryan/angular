@@ -17,8 +17,10 @@ import { ContentChildrenComponent } from "./content-children/container/content-c
 import { ContentChildComponent } from "./content-children/components/content-child.component";
 import { ChildWrapperComponent } from "./content-projection/components/child-wrapper.component";
 import { SheepComponent } from './content-projection-animals/sheep.component';
-import { ContentProjectionAnimalsComponent } from './content-projection-animals/content-projection-animals.component';
-import { PastureComponent } from './content-projection-animals/pasture.component';
+import { ContentProjectionAnimalsExplicitComponent } from './content-projection-animals/explicit/content-projection-animals-explicit.component';
+import { PastureComponent } from './content-projection-animals/explicit/pasture.component';
+import { ContentProjectionAnimalsTargetComponent } from './content-projection-animals/target/content-projection-animals-target.component';
+import { PastureTargetComponent } from './content-projection-animals/target/pasture-target.component';
 
 @NgModule({
   imports: [
@@ -44,8 +46,10 @@ import { PastureComponent } from './content-projection-animals/pasture.component
     ContentChildrenComponent,
     ContentChildComponent,
     SheepComponent,
-    ContentProjectionAnimalsComponent,
-    PastureComponent
+    ContentProjectionAnimalsExplicitComponent,
+    PastureComponent,
+    ContentProjectionAnimalsTargetComponent,
+    PastureTargetComponent
   ],
   providers: [],
   entryComponents: [ExEntryComponent]

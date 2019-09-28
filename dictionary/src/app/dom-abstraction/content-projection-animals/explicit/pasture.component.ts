@@ -4,9 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-pasture',
   template: `
     <div class="bg-green-light">
-      <app-sheep></app-sheep>
-      <app-sheep></app-sheep>
-      <app-sheep></app-sheep>
+      <ng-content></ng-content>
     </div>
   `,
   styles: [`

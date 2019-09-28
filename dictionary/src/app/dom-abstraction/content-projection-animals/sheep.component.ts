@@ -7,7 +7,14 @@ let instances = 0;
   template: `
     <h1>{{count}} 🐑</h1>
   `,
-  styles: []
+  styles: [`
+    // Style is not working. It appears in the dom _nghost but has not affect
+    // :host {
+    //   h1 {
+    //     color: red;
+    //   }
+    // }
+  `]
 })
 export class SheepComponent {
   count: number;
