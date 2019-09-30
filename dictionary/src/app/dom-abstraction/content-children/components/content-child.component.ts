@@ -18,19 +18,19 @@ let instances = 0;
     <ng-content></ng-content>
   `
 })
-export class ContentChildComponent
-  implements OnInit, AfterContentInit, AfterViewInit {
-  @ViewChild("h1")
-  h1: ElementRef;
-  @ContentChild("tplRefInsideNgContent")
-  tplRef: ElementRef;
-  instances = instances + 1;
-  instanceRef = instances;
+export class ContentChildComponent implements OnInit, AfterContentInit, AfterViewInit {
+
+  @ViewChild("h1") h1: ElementRef;
+
+  @ContentChild("tplRefInsideNgContent") tplRef: ElementRef;
+
+  instanceRef = 0;
+
   constructor() {
     console.log("[Child] constructor() { h1, tplRef } ");
     console.log(this.h1); // undefined
     console.log(this.tplRef); // undefined
-
+    this.instanceRef = ++instances;
   }
 
   ngOnInit() {

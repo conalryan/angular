@@ -17,10 +17,17 @@ import { ContentChildrenComponent } from "./content-children/container/content-c
 import { ContentChildComponent } from "./content-children/components/content-child.component";
 import { ChildWrapperComponent } from "./content-projection/components/child-wrapper.component";
 import { SheepComponent } from './content-projection-animals/sheep.component';
-import { ContentProjectionAnimalsExplicitComponent } from './content-projection-animals/explicit/content-projection-animals-explicit.component';
-import { PastureComponent } from './content-projection-animals/explicit/pasture.component';
-import { ContentProjectionAnimalsTargetComponent } from './content-projection-animals/target/content-projection-animals-target.component';
-import { PastureTargetComponent } from './content-projection-animals/target/pasture-target.component';
+import { ContentProjectionAnimalsNgContentComponent } from './content-projection-animals/1-ng-content/content-projection-animals-ng-content.component';
+import { PastureComponent } from './content-projection-animals/1-ng-content/pasture.component';
+import { ContentProjectionAnimalsNgContentSelectComponent } from './content-projection-animals/2-ng-content-select/content-projection-animals-ng-content-select.component';
+import { PastureTargetComponent } from './content-projection-animals/2-ng-content-select/pasture-target.component';
+import { ContentProjectionAnimalsNgContainerProjectAsComponent } from './content-projection-animals/3-ng-container-project-as/content-projection-animals-ng-contianer-project-as.component';
+import { PastureProjectAsComponent } from './content-projection-animals/3-ng-container-project-as/pasture-project-as.component';
+import { ContentProjectionAnimalsMultiNgContentComponent } from './content-projection-animals/4-multi-ng-content/content-projection-animals-multi-ng-content.component';
+import { PastureMultiNgContentComponent } from './content-projection-animals/4-multi-ng-content/pasture-multi-ng-content.component';
+import { ContentProjectionAnimalsNgIfOnNgContentComponent } from './content-projection-animals/5-ng-for-ng-if-ng-content/content-projection-animals-ng-if-on-ng-content.component';
+import { PastureNgIfOnNgContentComponent } from "./content-projection-animals/5-ng-for-ng-if-ng-content/pasture-ngif-on-ng-content.component";
+import { ContentProjectionAnimalsTemplateRefComponent } from './content-projection-animals/6-template-ref/content-projection-animals-template-ref.component';
 
 @NgModule({
   imports: [
@@ -46,10 +53,17 @@ import { PastureTargetComponent } from './content-projection-animals/target/past
     ContentChildrenComponent,
     ContentChildComponent,
     SheepComponent,
-    ContentProjectionAnimalsExplicitComponent,
+    ContentProjectionAnimalsNgContentComponent,
     PastureComponent,
-    ContentProjectionAnimalsTargetComponent,
-    PastureTargetComponent
+    ContentProjectionAnimalsNgContentSelectComponent,
+    PastureTargetComponent,
+    ContentProjectionAnimalsNgContainerProjectAsComponent,
+    PastureProjectAsComponent,
+    ContentProjectionAnimalsMultiNgContentComponent,
+    PastureMultiNgContentComponent,
+    ContentProjectionAnimalsNgIfOnNgContentComponent,
+    PastureNgIfOnNgContentComponent,
+    ContentProjectionAnimalsTemplateRefComponent
   ],
   providers: [],
   entryComponents: [ExEntryComponent]

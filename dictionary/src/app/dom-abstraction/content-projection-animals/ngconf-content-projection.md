@@ -28,7 +28,7 @@ Example use:
 </my-pasture>
 ```
 
-## NgContainer
+## [NgContainer](https://angular.io/guide/structural-directives#ng-container-to-the-rescue)
 
 - Transparent, it doesn't change the output.
 - You can put as many ng-containers as you want.
@@ -37,7 +37,7 @@ Example use:
 
 - Attribute selector to place on ng-container to specify the type of the projected content.
 - Any valid css selector can be used.
-
+- Can be placed on any element you want, and that element will be projected as the given element (e.g. `<h1 ngProjectAs="my-sheep">Hi</h1>`)
 ```html
 <my-pasture>
   <ng-container ngProjectAs="my-sheep">

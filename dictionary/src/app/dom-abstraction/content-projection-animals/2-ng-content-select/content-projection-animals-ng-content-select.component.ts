@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-content-projection-animals-explicit',
+  selector: 'app-content-projection-animals-ng-content-select',
   template: `
+    <h2>ng-content select</h2>
     <div class="border bg-white">
-      <app-pasture>
+      <app-pasture-target>
         <app-sheep></app-sheep>
         <app-sheep></app-sheep>
-        <app-sheep></app-sheep>
-      </app-pasture>
+        <h1>I'm not a sheep</h1>
+      </app-pasture-target>
     </div>
   `,
   styles: [`
@@ -17,7 +18,7 @@ import { Component, OnInit } from '@angular/core';
     }
   `]
 })
-export class ContentProjectionAnimalsExplicitComponent implements OnInit {
+export class ContentProjectionAnimalsNgContentSelectComponent implements OnInit {
 
   constructor() { }
 

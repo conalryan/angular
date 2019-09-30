@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-content-projection-animals-target',
+  selector: 'app-content-projection-animals-ng-if-on-ng-content',
   template: `
+    <h2>ng-for and ng-if ng-content</h2>
     <div class="border bg-white">
-      <app-pasture-target>
+      <app-pasture-ng-for-ng-if-ng-content>
         <app-sheep></app-sheep>
-        <app-sheep></app-sheep>
-        <h1>I'm not a sheep</h1>
-      </app-pasture-target>
+      </app-pasture-ng-for-ng-if-ng-content>
     </div>
   `,
   styles: [`
@@ -17,7 +16,7 @@ import { Component, OnInit } from '@angular/core';
     }
   `]
 })
-export class ContentProjectionAnimalsTargetComponent implements OnInit {
+export class ContentProjectionAnimalsNgIfOnNgContentComponent implements OnInit {
 
   constructor() { }
 

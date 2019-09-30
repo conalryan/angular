@@ -9,8 +9,11 @@ import { ContentProjectionComponent } from "./content-projection/container/conte
 import { ViewChildComponent } from "./view-child/view-child.component";
 import { ViewChildrenComponent } from "./view-children/container/view-children.component";
 import { ContentChildrenComponent } from "./content-children/container/content-children.component";
-import { ContentProjectionAnimalsExplicitComponent } from "./content-projection-animals/explicit/content-projection-animals-explicit.component";
-import { ContentProjectionAnimalsTargetComponent } from "./content-projection-animals/target/content-projection-animals-target.component";
+import { ContentProjectionAnimalsNgContentComponent } from "./content-projection-animals/1-ng-content/content-projection-animals-ng-content.component";
+import { ContentProjectionAnimalsNgContentSelectComponent } from "./content-projection-animals/2-ng-content-select/content-projection-animals-ng-content-select.component";
+import { ContentProjectionAnimalsNgContainerProjectAsComponent } from "./content-projection-animals/3-ng-container-project-as/content-projection-animals-ng-contianer-project-as.component";
+import { ContentProjectionAnimalsMultiNgContentComponent } from "./content-projection-animals/4-multi-ng-content/content-projection-animals-multi-ng-content.component";
+import { ContentProjectionAnimalsNgIfOnNgContentComponent } from "./content-projection-animals/5-ng-for-ng-if-ng-content/content-projection-animals-ng-if-on-ng-content.component";
 
 const routes: Routes = [
   /* TODO: Make this a parent and child routes {
@@ -27,12 +30,24 @@ const routes: Routes = [
     component: ContentProjectionComponent
   },
   {
-    path: "content-projection-animals-explicit",
-    component: ContentProjectionAnimalsExplicitComponent
+    path: "content-projection-animals-1",
+    component: ContentProjectionAnimalsNgContentComponent
   },
   {
-    path: "content-projection-animals-target",
-    component: ContentProjectionAnimalsTargetComponent
+    path: "content-projection-animals-2",
+    component: ContentProjectionAnimalsNgContentSelectComponent
+  },
+  {
+    path: "content-projection-animals-3",
+    component: ContentProjectionAnimalsNgContainerProjectAsComponent
+  },
+  {
+    path: "content-projection-animals-4",
+    component: ContentProjectionAnimalsMultiNgContentComponent
+  },
+  {
+    path: "content-projection-animals-5",
+    component: ContentProjectionAnimalsNgIfOnNgContentComponent
   },
   {
     path: "element-ref",
