@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CalendarGridData } from './calendar-grid-data';
+import { CalendarGridData } from '../calendar-grid-data';
 
 @Component({
   selector: 'app-calendar-grid-template-wrapper',

@@ -16,7 +16,8 @@ import { ContentProjectionAnimalsMultiNgContentComponent } from "./content-proje
 import { ContentProjectionAnimalsNgIfOnNgContentComponent } from "./content-projection-animals/5-ng-for-ng-if-ng-content/content-projection-animals-ng-if-on-ng-content.component";
 import { ContentProjectionAnimalsNgTemplateComponent } from "./content-projection-animals/6-ng-template/content-projection-animals-ng-template.component";
 import { CalendarGridComponent } from "./calendar-grid/calendar-grid.component";
-import { CalendarGridWrapperTemplateComponent } from "./calendar-grid/calendar-grid.component-template-wrapper";
+import { CalendarGridWrapperTemplateComponent } from "./calendar-grid/ng-template/calendar-grid.component-template-wrapper";
+import { CalendarRowWrapper } from "./calendar-grid/calendar-row/calendar-row-wrapper";
 
 const routes: Routes = [
   /* TODO: Make this a parent and child routes {
@@ -59,6 +60,10 @@ const routes: Routes = [
   {
     path: "calendar-grid",
     component: CalendarGridWrapperTemplateComponent
+  },
+  {
+    path: "calendar-row",
+    component: CalendarRowWrapper
   },
   {
     path: "element-ref",
