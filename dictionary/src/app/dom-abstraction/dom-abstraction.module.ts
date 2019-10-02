@@ -30,6 +30,7 @@ import { PastureNgIfOnNgContentComponent } from "./content-projection-animals/5-
 import { ContentProjectionAnimalsNgTemplateComponent } from "./content-projection-animals/6-ng-template/content-projection-animals-ng-template.component";
 import { SheepBlueprintDirective } from './content-projection-animals/6-ng-template/sheep-blueprint.directive';
 import { PastureNgTemplateComponent } from "./content-projection-animals/6-ng-template/pasture-ng-template.component";
+import { CalendarGridModule } from "./calendar-grid/calendar-grid.module";
 
 @NgModule({
   imports: [
@@ -37,7 +38,8 @@ import { PastureNgTemplateComponent } from "./content-projection-animals/6-ng-te
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
-    DomAbstractionRoutingModule
+    DomAbstractionRoutingModule,
+    CalendarGridModule
   ],
   declarations: [
     HostElementComponent,
