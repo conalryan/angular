@@ -27,7 +27,9 @@ import { ContentProjectionAnimalsMultiNgContentComponent } from './content-proje
 import { PastureMultiNgContentComponent } from './content-projection-animals/4-multi-ng-content/pasture-multi-ng-content.component';
 import { ContentProjectionAnimalsNgIfOnNgContentComponent } from './content-projection-animals/5-ng-for-ng-if-ng-content/content-projection-animals-ng-if-on-ng-content.component';
 import { PastureNgIfOnNgContentComponent } from "./content-projection-animals/5-ng-for-ng-if-ng-content/pasture-ngif-on-ng-content.component";
-import { ContentProjectionAnimalsTemplateRefComponent } from './content-projection-animals/6-template-ref/content-projection-animals-template-ref.component';
+import { ContentProjectionAnimalsNgTemplateComponent } from "./content-projection-animals/6-ng-template/content-projection-animals-ng-template.component";
+import { SheepBlueprintDirective } from './content-projection-animals/6-ng-template/sheep-blueprint.directive';
+import { PastureNgTemplateComponent } from "./content-projection-animals/6-ng-template/pasture-ng-template.component";
 
 @NgModule({
   imports: [
@@ -63,7 +65,9 @@ import { ContentProjectionAnimalsTemplateRefComponent } from './content-projecti
     PastureMultiNgContentComponent,
     ContentProjectionAnimalsNgIfOnNgContentComponent,
     PastureNgIfOnNgContentComponent,
-    ContentProjectionAnimalsTemplateRefComponent
+    ContentProjectionAnimalsNgTemplateComponent,
+    SheepBlueprintDirective,
+    PastureNgTemplateComponent
   ],
   providers: [],
   entryComponents: [ExEntryComponent]

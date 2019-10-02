@@ -54,11 +54,13 @@ Example use:
 - Similar to `javascript parent.appendChild(el);`
 - In other words Angular protects the component based on where it was declared, not where it's used.
 - Aka a thrid-party component cannot control the lifecycle of your component, only you can by where you declare it.
+- Lifecylce of sheep component depends on where it is declared, not where it ends up being dispalyed in the html.
+- Perform plaement at build time as opposed to building it and moving it into place at runtime.
 
 ## TemplateRef
 
 - Blueprints in Angular
-- Wrap content in <ng-template>, now you can use that blueprint anywhere you want.
+- Wrap content in <ng-template>, now you can use that blueprint anywhere you want, as many times as you want. 
 
 ```html
 <ng-template>
