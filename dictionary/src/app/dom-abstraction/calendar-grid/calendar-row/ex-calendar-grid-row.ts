@@ -7,9 +7,11 @@ import { calendarGridData } from '../calendar-grid-data.stub';
   template: `
     <h4>Calendar Row</h4>
 
+    {{calendarGridData.rows[0].cells | json}}
+
     <app-calendar-grid-row [calendarGridRow]="calendarGridData.rows[0]">
       <app-calendar-grid-label>Row 1</app-calendar-grid-label>
-      <app-calendar-grid-cell>Hi</app-calendar-grid-cell>
+      <app-calendar-grid-cell>Hello there</app-calendar-grid-cell>
     </app-calendar-grid-row>
 
   `,

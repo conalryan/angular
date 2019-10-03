@@ -12,6 +12,7 @@ import { CalendarGridCell } from '../calendar-grid-data';
   `,
   styles: [`
     .calendar-grid-cell {
+      border: 1px solid blue;
       text-align: center;
       // https://stackoverflow.com/questions/25066214/flexbox-not-giving-equal-width-to-elements/25066844#25066844
       flex-basis: 0;
