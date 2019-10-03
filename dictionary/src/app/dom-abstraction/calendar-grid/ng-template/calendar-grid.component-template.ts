@@ -1,26 +1,26 @@
-import { Component, Input, OnChanges, TemplateRef } from '@angular/core';
+import { Component, Input, TemplateRef } from '@angular/core';
 import { CalendarGridData } from '../calendar-grid-data';
 
 @Component({
   selector: 'app-calendar-grid-template',
   template: `
     <h4>Calendar Grid Template</h4>
-    <div *ngFor="let propName of propNames" class="row calendar-grid-row">
+    <div *ngFor="let calendarGridRow of calendarGridData.rows" class="row calendar-grid-row">
       <div class="col-2">
       <ng-container *ngIf="!titleTemplate">
-        {{ propName }}
+        {{ calendarGridRow.label }}
       </ng-container>
-      <ng-container *ngTemplateOutlet="titleTemplate;context:{propName:propName}"></ng-container>
+      <ng-container *ngTemplateOutlet="titleTemplate;context:{label:calendarGridRow.label}"></ng-container>
       </div>
 
       <div class="col d-flex pl-0">
 
-        <div *ngFor="let calendarCell of calendarGridData[propName]"
+        <div *ngFor="let calendarCell of calendarGridRow.cells"
           class="flex-grow-1 calendar-grid-cell">
           <ng-container *ngIf="!dataTemplate">
             {{ calendarCell.value }}
           </ng-container>
-          <ng-container *ngTemplateOutlet="dataTemplate;context:{cellData:calendarCell}"></ng-container>
+          <ng-container *ngTemplateOutlet="dataTemplate;context:{cell:calendarCell}"></ng-container>
         </div>
 
       </div>
@@ -42,19 +42,12 @@ import { CalendarGridData } from '../calendar-grid-data';
     }
   `]
 })
-export class CalendarGridTemplateComponent implements OnChanges {
+export class CalendarGridTemplateComponent {
 
   @Input() calendarGridData: CalendarGridData;
   @Input() titleTemplate: TemplateRef<any>;
   @Input() dataTemplate: TemplateRef<any>;
 
-  propNames: string[] = [];
-
   constructor() { }
 
-  ngOnChanges() {
-    if (this.calendarGridData) {
-      this.propNames = Object.getOwnPropertyNames(this.calendarGridData);
-    }
-  }
 }

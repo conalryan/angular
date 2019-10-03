@@ -1,8 +1,8 @@
 import { Component, HostBinding, Input } from '@angular/core';
-import { CalendarGridCellData } from '../calendar-grid-data';
+import { CalendarGridCell } from '../calendar-grid-data';
 
 @Component({
-  selector: 'app-row-data',
+  selector: 'app-calendar-grid-cell',
   template: `
     <div class="col d-flex pl-0">
       <div class="flex-grow-1 calendar-grid-cell">
@@ -18,13 +18,13 @@ import { CalendarGridCellData } from '../calendar-grid-data';
     }
   `]
 })
-export class RowDataComponent {
+export class CalendarGridCellComponent {
 
   @HostBinding('class.col') col: boolean = true;
   @HostBinding('class.d-flex') dFlex: boolean = true;
   @HostBinding('class.pl-0') pl: boolean = true;
 
-  @Input() calendarGridCells: CalendarGridCellData[];
+  @Input() calendarGridCells: CalendarGridCell<any>[];
 
   constructor() { }
 }

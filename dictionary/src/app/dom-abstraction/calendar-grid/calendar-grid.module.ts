@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CalendarGridComponent } from './calendar-grid.component';
+import { NgModule } from '@angular/core';
 import { CalendarCellComponent } from './calendar-cell.component';
-import { CalendarGridWrapperTemplateComponent } from './ng-template/calendar-grid.component-template-wrapper';
+import { CalendarGridComponent } from './calendar-grid.component';
+import { CalendarGridCellComponent } from './calendar-row/calendar-grid-cell.component';
+import { CalendarGridLabelComponent } from './calendar-row/calendar-grid-label.component';
+import { CalendarGridRowComponent } from './calendar-row/calendar-grid-row.component';
+import { ExCalendarGridRow } from './calendar-row/ex-calendar-grid-row';
 import { CalendarGridTemplateComponent } from './ng-template/calendar-grid.component-template';
-import { CalendarRowComponent } from './calendar-row/calendar-row.component';
-import { CalendarRowWrapper } from './calendar-row/calendar-row-wrapper';
-import { RowTitleComponent } from './calendar-row/row-title.component';
-import { RowDataComponent } from './calendar-row/row-data.component';
+import { CalendarGridWrapperTemplateComponent } from './ng-template/calendar-grid.component-template-wrapper';
 
 @NgModule({
   declarations: [
@@ -15,10 +15,11 @@ import { RowDataComponent } from './calendar-row/row-data.component';
     CalendarCellComponent,
     CalendarGridWrapperTemplateComponent,
     CalendarGridTemplateComponent,
-    CalendarRowComponent,
-    CalendarRowWrapper,
-    RowTitleComponent,
-    RowDataComponent
+    CalendarGridRowComponent,
+    ExCalendarGridRow,
+    CalendarCellComponent,
+    CalendarGridLabelComponent,
+    CalendarGridCellComponent
   ],
   imports: [
     CommonModule
