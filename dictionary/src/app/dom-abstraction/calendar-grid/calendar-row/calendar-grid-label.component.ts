@@ -6,6 +6,9 @@ import { Component, HostBinding } from '@angular/core';
     <ng-content></ng-content>
   `,
   styles: [`
+    :host {
+      border: 1px solid red;
+    }
   `]
 })
 export class CalendarGridLabelComponent {

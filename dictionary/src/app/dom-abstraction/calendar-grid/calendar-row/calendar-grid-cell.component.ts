@@ -1,13 +1,10 @@
-import { Component, HostBinding, Input } from '@angular/core';
-import { CalendarGridCell } from '../calendar-grid-data';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-calendar-grid-cell',
   template: `
-    <div class="col d-flex pl-0">
-      <div class="flex-grow-1 calendar-grid-cell">
-        <ng-content></ng-content>
-      </div>
+    <div class="flex-grow-1 calendar-grid-cell">
+      <ng-content></ng-content>
     </div>
   `,
   styles: [`
@@ -23,9 +20,7 @@ export class CalendarGridCellComponent {
 
   @HostBinding('class.col') col: boolean = true;
   @HostBinding('class.d-flex') dFlex: boolean = true;
-  @HostBinding('class.pl-0') pl: boolean = true;
-
-  @Input() calendarGridCells: CalendarGridCell<any>[];
+  @HostBinding('class.p-0') pl: boolean = true;
 
   constructor() { }
 }

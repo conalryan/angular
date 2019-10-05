@@ -4,7 +4,15 @@ export const strCells = (): CalendarGridCell<string>[] => {
   return [
     {id: 'A', date: new Date(2019, 9, 1, 0, 0, 0, 0), value: '1'},
     {id: 'A', date: new Date(2019, 9, 2, 0, 0, 0, 0), value: '2'},
-    {id: 'A', date: new Date(2019, 9, 3, 0, 0, 0, 0), value: '3'}
+    {id: 'A', date: new Date(2019, 9, 3, 0, 0, 0, 0), value: '3'},
+    {id: 'A', date: new Date(2019, 9, 4, 0, 0, 0, 0), value: '3'},
+    {id: 'A', date: new Date(2019, 9, 5, 0, 0, 0, 0), value: '3'},
+    {id: 'A', date: new Date(2019, 9, 6, 0, 0, 0, 0), value: '3'},
+    {id: 'A', date: new Date(2019, 9, 7, 0, 0, 0, 0), value: '3'},
+    {id: 'A', date: new Date(2019, 9, 8, 0, 0, 0, 0), value: '3'},
+    {id: 'A', date: new Date(2019, 9, 9, 0, 0, 0, 0), value: '3'},
+    {id: 'A', date: new Date(2019, 9, 10, 0, 0, 0, 0), value: '3'},
+    {id: 'A', date: new Date(2019, 9, 11, 0, 0, 0, 0), value: '3'}
   ];
 };
 

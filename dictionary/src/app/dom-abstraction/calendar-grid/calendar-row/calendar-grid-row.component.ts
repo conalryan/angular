@@ -5,7 +5,7 @@ import { CalendarGridCell, CalendarGridRow } from '../calendar-grid-data';
   selector: 'app-calendar-grid-row',
   template: `
     <!-- Label -->
-    <ng-content></ng-content>
+    <ng-content select="app-calendar-grid-label"></ng-content>
 
     <!--<ng-template #cell>
       <ng-content select="app-calendar-grid-cell"></ng-content>
@@ -16,11 +16,13 @@ import { CalendarGridCell, CalendarGridRow } from '../calendar-grid-data';
       <ng-content select="app-calendar-grid-cell"></ng-content>
     </ng-template>
 
-    <ng-container *ngFor="let calendarCell of calendarGridRow.cells">
-      <!--<ng-container *ngTemplateOutlet="cell;context:{cellData:calendarCell}"></ng-container>-->
+    <!--<ng-container *ngFor="let calendarCell of calendarGridRow.cells">
+      !--<ng-container *ngTemplateOutlet="cell;context:{cellData:calendarCell}"></ng-container>--
       ngFor loop cells
       <ng-container *ngTemplateOutlet="hi"></ng-container>
-    </ng-container>
+    </ng-container>-->
+
+    <ng-content *ngFor="let calendarCell of calendarGridRow.cells; template: hi"></ng-content>
   `,
   styles: [`
     // .calendar-grid-row:not(:last-child) {
